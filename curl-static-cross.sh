@@ -775,6 +775,10 @@ curl_config() {
             --enable-alt-svc --enable-websockets \
             --enable-ipv6 --enable-unix-sockets --enable-socketpair \
             --enable-headers-api --enable-versioned-symbols \
+            --enable-optimize \
+            --disable-threaded-resolver \
+            --disable-pthreads \
+            --disable-ares \
             --enable-warnings --enable-werror \
             --enable-curldebug --enable-dict --enable-netrc \
             --enable-bearer-auth --enable-tls-srp --enable-dnsshuffle \
