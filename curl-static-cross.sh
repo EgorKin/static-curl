@@ -576,8 +576,7 @@ compile_tls() {
         -fPIC \
         --prefix="${PREFIX}" \
         --openssldir=/etc/ssl \
-#        threads
-        no-shared \
+        threads no-shared \
         enable-ktls \
         ${no_hw_padlock} \
         ${EC_NISTP_64_GCC_128} \
