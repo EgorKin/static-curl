@@ -576,7 +576,8 @@ compile_tls() {
         -fPIC \
         --prefix="${PREFIX}" \
         --openssldir=/etc/ssl \
-        threads no-shared \
+#        threads
+        no-shared \
         enable-ktls \
         ${no_hw_padlock} \
         ${EC_NISTP_64_GCC_128} \
@@ -776,7 +777,7 @@ curl_config() {
             --enable-ipv6 --enable-unix-sockets --enable-socketpair \
             --enable-headers-api --enable-versioned-symbols \
 #            --enable-threaded-resolver
-            --enable-optimize \
+#            --enable-optimize \
 #            --enable-pthreads \
             --enable-warnings --enable-werror \
             --enable-curldebug --enable-dict --enable-netrc \
